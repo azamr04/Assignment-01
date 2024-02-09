@@ -32,6 +32,12 @@
         background-color: #594c2a;
         color: white;
       }
+      #navbarHeader {
+        background-color: #a0ac91;
+      }
+      .about-text {
+        color:white;
+      }
       .main-text {
         color: white;
         font-weight: 300;
@@ -130,6 +136,8 @@
         width: 4rem;
         height: 4rem;
         border-radius: .75rem;
+        background-color: #5d775b;
+        color: white;
       }
       
       .icon-square {
@@ -151,13 +159,15 @@
     }
 
     .email {
-        font-style: italic;
         color: #777;
     }
 
-    .date {
-        font-size: 14px;
-        color: #999;
+    .date{
+      color: #777;
+    }
+
+    .link {
+      color: #777;
     }
 
     .professor {
@@ -167,8 +177,7 @@
     }
 
     .assignment {
-        font-size: 14px;
-        color: #999; 
+      color: #777; 
     }
     </style>
 
@@ -182,15 +191,15 @@
     <div class="container" id="test">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4>About</h4>
-          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          <h4 class="about-text">About</h4>
+          <p class="about-text">Authored by Rida Azam and Jared Wong. We created a cozy website to shop for coffee, tea and pastries.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Pages</h4>
+          <h4 class="about-text">Pages</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">Pastries</a></li>
-            <li><a href="#" class="text-white">Authors</a></li>
+            <li><a href="./index.html" class="about-text">Home</a></li>
+            <li><a href="./pastries.html" class="about-text">Pastries</a></li>
+            <li><a href="./about.html" class="about-text">Authors</a></li>
           </ul>
         </div>
       </div>
@@ -285,27 +294,29 @@
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
       <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 icon-colors">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
         </div>
         <h3 class="fs-2 text-body-emphasis">Assignment Information</h3>
-        <p class="course-name">Course: COM S 319</p>
+        <p class="student">Course: COM S 319</p>
         <p class="assignment">Assignment: Assignment 01</p>
-        <p class="date">Start Date: 02/7/2024</p>
-        <p class="date">Completion Date: 02/8/2024</p>
+        <p class="date">Start Date: 02/7/2024 <br>
+          Completion Date: 02/8/2024
+        </p>
+        <p class="link">All images from <a href="https://unsplash.com/">unsplash.com</a></p>
       </div>
 
       <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center icon-colors fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
         </div>
         <h3 class="fs-2 text-body-emphasis">Names/Developers</h3>
         <p class="student">Rida Azam and Jared Wong</p>
-        <p class="email">Contact us at azam@iastate.edu or jmwong@iastate.edu</p>
+        <p class="email">Contact us at razam@iastate.edu or jmwong@iastate.edu</p>
       </div>
 
       <div class="feature col">
-        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center icon-colors fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
         </div>
         <h3 class="fs-2 text-body-emphasis">Instructors</h3>
@@ -323,7 +334,7 @@
       <a href="#">Back to top</a>
     </p>
     <p class="mb-1">CS Coffee Shop &copy; was created by Rida Azam and Jared Wong</p>
-    <p class="mb-0"><a href="/">Read our authors page</a> or check out our <a href="../getting-started/introduction/">pastries here</a>.</p>
+    <p class="mb-0"><a href="./index.html">Read our authors page</a> or check out our <a href="./index.html">coffee here</a>.</p>
   </div>
 </footer>
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
